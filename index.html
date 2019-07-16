@@ -11,6 +11,24 @@
     <title>Shortcuts</title>
   </head>
   <body>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Shortcuts</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Top <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#directories">Directories</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
     <div class="container">
       
       <h1>Handy Shortcuts</h1>
@@ -20,66 +38,39 @@
       <h2>Command Line Interface</h2>
       <p>Try these on the command line</p>
 
-      <h3>Directories</h3>
+      <div id="directories">
+        <h3>Directories</h3>
 
-      <h4>Make Directory</h4>
-      <code>mkdir newDirectory</code>
-      <p>Create a new directory within the current directory</p>
+        <h4>Make Directory</h4>
+        <code>mkdir newDirectory</code>
+        <p>Create a new directory within the current directory</p>
 
-      <h4>View Directories</h4>
-      <code>dir</code>
-      <p>View directories and files located within the current directory</p>
+        <h4>View Directories</h4>
+        <code>dir</code>
+        <p>View directories and files located within the current directory</p>
 
-      <h4>Change Directory</h4>
-      <code>cd newDirectory</code>
-      <p>Navigate to our newly created directory</p>
+        <h4>Change Directory</h4>
+        <code>cd newDirectory</code>
+        <p>Navigate to our newly created directory</p>
 
-      <h4>Leave Directory</h4>
-      <code>cd ..</code>
-      <p>Navigate to the parent directory</p>
+        <h4>Leave Directory</h4>
+        <code>cd ..</code>
+        <p>Navigate to the parent directory</p>
 
-      <h4>Copy Directory</h4>
-      <code>cp -r newDirectory/ copiedDirectory</code>
-      <p>Copy the original directory</p>
+        <h4>Copy Directory</h4>
+        <code>cp -r newDirectory/ copiedDirectory</code>
+        <p>Copy the original directory</p>
 
-      <h4>Rename Directory</h4>
-      <code>mv copiedDirectory/ renamedDirectory</code>
-      <p>Rename the copied directory</p>
-
-
-
-
-
-
-mkdir newDirectory
-Change Directory
-cd
-Go to the home directory
-cd someDirectory
-Change to a specific directory
-
-Change to a specific directory
-cd newDirectory
-Navigate Up
-Move up from the current directory
-cd ..
-
-
-
-
-
-
-Copy
-Ctrl + Shift + c
-Paste
-Ctrl + Shift + v
-
+        <h4>Rename Directory</h4>
+        <code>mv copiedDirectory/ renamedDirectory</code>
+        <p>Rename the copied directory</p>
+      </div>
     </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<!--     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 </html>
