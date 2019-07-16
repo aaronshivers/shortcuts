@@ -23,17 +23,23 @@
             <a class="nav-link" href="#">Top <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#general">General</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#directories">Directories</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#files">Files</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#git">Git</a>
           </li>
         </ul>
       </div>
     </nav>
 
     <!-- Begin Container -->
-    <div class="container">
+    <div class="container mt-3">
       
       <h1>Handy Shortcuts</h1>
       <h4>...sort of a walkthrough</h4>
@@ -46,7 +52,7 @@
       <div class="accordion">
 
         <!-- Begin General Cli Card -->
-        <div class="card">
+        <div id="general" class="card">
           <div class="card-header">
             <h3 class="mb-0">
               <button class="btn btn-link" data-toggle="collapse" data-target="#collapseGeneral">General</button>
@@ -54,7 +60,7 @@
           </div>
         
           
-          <div id="collapseGeneral" class="collapse show">
+          <div id="collapseGeneral" class="collapse">
             <div class="card-body">
 
               <div class="mb-3">
@@ -145,6 +151,60 @@
           </div>
         </div>
         <!-- End Files Card -->
+
+        <!-- Begin Git Card -->
+        <div class="card">
+          <div class="card-header">
+            <h3 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseGit">Git</button>
+            </h3>
+          </div>
+        
+          
+          <div id="collapseGit" class="collapse show">
+            <div class="card-body">
+
+              <p>These commands should be run from within the project directory</p>
+
+              <div class="mb-3">
+                <h4>Initialze a new Git Repository</h4>
+                <code>git init</code>
+              </div>
+
+              <div class="mb-3">
+                <h4>Check Git Status</h4>
+                <code>git status</code>
+              </div>
+
+              <div class="mb-3">
+                <h4>Add All Unstaged Files to be Committed</h4>
+                <code>git add .</code>
+              </div>
+
+              <div class="mb-3">
+                <h4>Discard All Changes</h4>
+                <code>git checkout .</code>
+              </div>
+
+              <div class="mb-3">
+                <h4>Commit Changes</h4>
+                <code>git commit -am 'description of changes'</code>
+              </div>
+
+              <div class="mb-3">
+                <h4>Push Commit</h4>
+                <code>git push</code>
+              </div>
+
+              <div class="mb-3">
+                <h4>Pull from Remote Repository</h4>
+                <code>git pull</code>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- End Git Card -->
 
       </div>
       <!-- End Files Accordion -->
