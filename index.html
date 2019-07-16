@@ -32,6 +32,7 @@
       </div>
     </nav>
 
+    <!-- Begin Container -->
     <div class="container">
       
       <h1>Handy Shortcuts</h1>
@@ -41,80 +42,116 @@
       <h2>Command Line Interface</h2>
       <p>Try these on the command line</p>
 
-      <!-- Directories Section -->
-      <div id="directories" class="accordion">
+      <!-- Begin Files Accordion -->
+      <div class="accordion">
+
+        <!-- Begin General Cli Card -->
         <div class="card">
+          <div class="card-header">
+            <h3 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseGeneral">General</button>
+            </h3>
+          </div>
+        
+          
+          <div id="collapseGeneral" class="collapse show">
+            <div class="card-body">
+
+              <div class="mb-3">
+                <h4>Copy</h4>
+                <p>
+                  To copy a line from the terminal
+                  <br>
+                  First, highlight the line, then...
+                </p>
+                <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>c</kbd>
+              </div>
+
+              <div class="mb-3">
+                <h4>Paste</h4>
+                <p>To paste a line to the terminal</p>
+                <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>v</kbd>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- End General Cli Card -->
+
+        <!-- Begin Directories Card -->
+        <div id="directories" class="card">
           <div class="card-header">
             <h3 class="mb-0">
               <button class="btn btn-link" data-toggle="collapse" data-target="#collapseDirectories">Directories</button>
             </h3>
           </div>
-        </div>
         
-        <div id="collapseDirectories" class="collapse">
-          <div class="card-body">
+          <div id="collapseDirectories" class="collapse">
+            <div class="card-body">
 
-            <h4>Navigate to Home Directory</h4>
-            <code>cd</code>
-            <p>Move to the home directory from anywhere</p>
+              <h4>Navigate to Home Directory</h4>
+              <code>cd</code>
+              <p>Move to the home directory from anywhere</p>
 
-            <h4>Make Directory</h4>
-            <code>mkdir newDirectory</code>
-            <p>Create a new directory within the current directory</p>
+              <h4>Make Directory</h4>
+              <code>mkdir newDirectory</code>
+              <p>Create a new directory within the current directory</p>
 
-            <h4>View Directories</h4>
-            <code>dir</code>
-            <p>View directories and files located within the current directory</p>
+              <h4>View Directories</h4>
+              <code>dir</code>
+              <p>View directories and files located within the current directory</p>
 
-            <h4>Change to Specicfic Directory</h4>
-            <code>cd newDirectory</code>
-            <p>Navigate to our newly created directory</p>
+              <h4>Change to Specicfic Directory</h4>
+              <code>cd newDirectory</code>
+              <p>Navigate to our newly created directory</p>
 
-            <h4>Leave Directory</h4>
-            <code>cd ..</code>
-            <p>Navigate to the parent directory</p>
+              <h4>Leave Directory</h4>
+              <code>cd ..</code>
+              <p>Navigate to the parent directory</p>
 
-            <h4>Copy Directory</h4>
-            <code>cp -r newDirectory/ copiedDirectory</code>
-            <p>Copy the original directory</p>
+              <h4>Copy Directory</h4>
+              <code>cp -r newDirectory/ copiedDirectory</code>
+              <p>Copy the original directory</p>
 
-            <h4>Rename Directory</h4>
-            <code>mv copiedDirectory/ renamedDirectory</code>
-            <p>Rename the copied directory</p>
+              <h4>Rename Directory</h4>
+              <code>mv copiedDirectory/ renamedDirectory</code>
+              <p>Rename the copied directory</p>
 
-            <h4>Move Directory</h4>
-            <code>mv renamedDirectory/ newDirectory</code>
-            <p>Move the renamedDirectory inside the newDirectory</p>
+              <h4>Move Directory</h4>
+              <code>mv renamedDirectory/ newDirectory</code>
+              <p>Move the renamedDirectory inside the newDirectory</p>
 
+            </div>
           </div>
         </div>
+        <!-- End Directories Card -->
 
-      </div>
-
-      <!-- Files Section -->
-      <div id="files" class="accordion">
-        <div class="card">
+        <!-- Begin Files Card -->
+        <div id="files" class="card">
           <div class="card-header">
             <h3 class="mb-0">
               <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFiles">Files</button>
             </h3>
           </div>
-        </div>
         
-        <div id="collapseFiles" class="collapse">
-          <div class="card-body">
+          <div id="collapseFiles" class="collapse">
+            <div class="card-body">
 
-            <h4>Create File</h4>
-            <code>touch newFile</code>
-            <p>create a new file in the current directory</p>
+              <h4>Create File</h4>
+              <code>touch newFile</code>
+              <p>create a new file in the current directory</p>
 
+            </div>
           </div>
         </div>
+        <!-- End Files Card -->
 
       </div>
+      <!-- End Files Accordion -->
     </div>
+    <!-- End Container -->
 
-    <!-- Optional JavaScript -->
+    <!-- JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
